@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>SHOPING_LIST</title>
+		<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="./css/my.css"/>
+		<link rel="stylesheet" type="text/css" href="./css/list.css"/>
+</head>
+<body>
+	<nav class="navbar navbar-inverse">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a href="index.html" class="navbar-brand">Shopping Mall</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav">
+					<li><a href="#">在线商城</a></li>
+					<li><a href="#">我的订单</a></li>
+					<li><a href="#">我的会员</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right" style="position:relative;">
+					<li><a href="login.html" target="_blank">登录 <span class="glyphicon glyphicon-user"></span></a></li>
+					<li>
+						<a href="gouwuche.html" id="SHOP">
+							<sapn class="glyphicon glyphicon-shopping-cart"></sapn> <span class="badge">0</span>
+						</a>
+						<!--直接显示的空购物车的布局-->
+						
+					</li>
+					<div class="shop hidden-xs" id="shop">
+						
+							<i></i>
+							购物车中还没有商品，赶紧选购吧！
+						
+					</div>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	
+	
+	<!--bottom部分-->
+	<div class="jumbotron text-center bottom">
+		<p>欢迎下次继续使用我们的产品</p>
+		<p>
+			<a href="#">首页</a>
+			<a href="#">产品</a>
+			<a href="#">服务社区</a>
+			<a href="#">联系我们</a>
+		</p>
+		<p class="last">Copyright((c) Copyright 2018 15364. All Rights Reserved.)</p>
+	</div>
+	<script src="./js/jquery_1.12.4_jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="./js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>

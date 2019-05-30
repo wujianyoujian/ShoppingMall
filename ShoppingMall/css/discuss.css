@@ -1,0 +1,86 @@
+.contain {
+    width: 1100px;
+    margin: 0 auto;
+}
+.commit {
+    position: relative;
+}
+.comment {
+    width: 1000px;
+    height: 100px;
+    resize: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+.Send {
+    border: 1px solid #000;
+    border-radius: 5px;
+    position: absolute;
+    top: 70px;
+    margin-left: 15px; 
+}
+.messageList {
+    width: 1000px;
+    background: #fff;
+}
+.messageList .info {
+    padding: 10px 20px;
+    border-bottom: 2px solid #ccc;
+}
+.info .infoText {
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+.info .infoOperation {
+    width: 100%;
+    overflow: hidden;
+}
+.infoOperation .infoTime {
+    float: left;
+    font-size: 13px;
+    color: #ccc;
+}
+.infoOperation .infoHandle {
+    float: right;
+    font-size: 13px;
+}
+.infoHandle a {
+    text-decoration: none;
+    color: #ccc;
+    background: url("../images/icons.png") no-repeat 0 -2px;
+    padding-left: 25px;
+    margin-left: 10px;
+}
+.infoHandle a:nth-child(2) {
+    background-position: 0 -17px;
+}
+.infoHandle a:nth-child(3) {
+    background-position: 0 -35px;
+}
+.page{
+    height: 40px;
+    background: #222;
+    text-align: right;
+    padding: 10px;
+    box-sizing: border-box;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.page a{
+    text-decoration: none;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ccc;
+    text-align: center;
+    line-height: 20px;
+    color: #2b2b2b;
+}
+.page a:hover{
+	background: #FD8040;
+}
+.page a.cur{
+	background: #FD8040;
+}

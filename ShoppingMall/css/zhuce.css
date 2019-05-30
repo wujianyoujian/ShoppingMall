@@ -1,0 +1,159 @@
+*{
+	margin:0;
+	padding:0;
+	border:1 solid #222;
+}
+a{
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: none;
+}
+ul{
+	list-style-type: none;
+}
+body{
+	background:url(../images/user_bg.png);
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+.navbar{
+	border-radius:0;
+}
+li a.gowu{
+	padding-right:0;
+}
+
+.shop{
+	position: absolute;
+	top: 40px;
+	right:20px;
+	width:300px;
+	height:150px;
+	background: #fff;	
+	z-index: 999;
+	text-align: center;
+	border-radius:5px;
+	display: none;
+}
+.shop i{
+	display: block;
+	width:300px;
+	height:100px;
+	background: url(../images/shop.png) no-repeat center center;
+	
+
+}
+
+.zhuce{
+	width:680px;
+	height:700px;
+	margin:0 auto;
+	background:#fff;
+	border-radius:10px;
+	padding-top:50px;
+	padding-left:148px;
+	box-sizing: border-box;
+    margin-bottom: 100px;
+}
+.zhuce_title{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.zhuce_title p{
+    color: #111111;
+    font-size: 18px;
+    font-weight: bold;
+}
+.reg{
+	width:260px;
+	margin-left:20px;
+}
+.reg li{
+	margin:20px 0;
+	position:relative;
+}
+.reg li .label{
+	position:absolute;
+	left:270px;
+	top:5px;
+	display: none;
+}
+.reg li input.input_def{
+	float:right;
+	width:180px;
+	height:25px;
+	border-radius:5px;
+	padding-left:10px;
+	border:1px solid #222222;
+	box-sizing: border-box;
+}
+.reg li select{
+	float:right;
+	border:1px solid #222;
+}
+.reg li span{
+	text-align:initial;
+
+}
+.reg li i,i.hong{
+	color:#f00;
+}
+.reg li .glyphicon{
+    position: absolute;
+    right: 5px;
+    top: 6px;
+    font-size: 12px;
+    cursor: pointer;
+}
+#passwordcheck{
+    display: none;
+}
+#passwordcheck .lenght{
+    width: 180px;
+    height: 20px;
+    border: 1px solid #080808;
+    position: absolute;
+    top: 1px;
+    left: 80px;
+    border-radius: 8px;
+}
+.lenght .dot{
+    height: 100%;
+    width: 0;
+    border-radius: 8px;
+}
+.sex{
+	margin-left:20px;
+	margin-bottom:10px;
+}
+.birth{
+	margin-left:20px;
+}
+.textarea{
+	margin-left:20px;
+	margin-top:20px;
+}
+.textarea span{
+	vertical-align: 81px;
+}
+.textarea textarea{
+	resize: none;
+	width:300px;
+	height:100px;
+    padding: 10px;
+}
+.textarea i{
+	font-size:12px;
+}
+#submit,#res{
+	width:100px;
+	height:35px;
+	cursor:pointer;
+	border-radius:5px;
+	background:#1B6D85;
+	border:1px solid #fff;
+	color:#fff;
+	margin:30px 0 0 20px;
+}

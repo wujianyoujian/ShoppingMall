@@ -1,0 +1,144 @@
+.content{
+	height:1000px;
+}
+.input-group{
+	width: 400px;
+	float: right;
+}
+.logo{
+	width:106px ;
+	height:40px;
+	float: left;
+}
+.logo a{
+	text-decoration: none;
+	text-align: center;
+	display: block;
+}
+.logo span{
+	font-size: 14px;
+	color:#000000;
+	font-weight: 600;
+}
+.store_id{
+	height:60px;
+}
+.breadcrumb{
+	background: #fff;
+	margin: 10px;
+}
+.breadcrumb a{
+	text-decoration: none;
+	color: #444444;
+}
+.jieshao{
+	margin:20px 0 0 0;
+	clear: both;
+}
+.jieshao .picture{
+	width:351px;
+	height:407px;
+	position: relative;
+	float:left;
+}
+.jieshao .picture .small{
+	position:relative;
+	border:1px solid #ccc;
+}
+.jieshao .picture .small img{
+	width:350px;
+	height:350px;
+	display: none;	
+}
+.jieshao .picture .small .mask{
+	width:100px;
+	height:100px;
+	background:#FFFF00;
+	opacity: 0.3;
+	cursor:move;
+	position: absolute;
+	top:0;
+	left:0;
+	display: none;
+}
+.jieshao .picture ul {
+	padding:0 0 0 12px;
+	border:2px solid #444;
+	overflow: hidden;
+	
+}
+.jieshao .picture ul li{
+	float:left;
+	margin-right:13px;
+}
+.jieshao .picture ul li img{
+	width: 54px;
+	height: 54px;
+}
+.jieshao .picture .big{
+	width: 500px;
+	height:500px;
+	overflow: hidden;
+	position: absolute;
+	top:0;
+	left:352px;
+	display: none;
+	background: #fff;
+}
+.jieshao .picture .big img{
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: none;
+}
+.jieshao .picture img.imgshow{
+	display: block;
+}
+.jieshao .msgtxt{
+	width:748px;
+	float:left;
+	margin-left:40px;
+}
+.msgtxt .title_1{
+	font-size:18px;
+	font-weight: bold;
+	margin:0;
+	margin-top: 10px;
+}
+.msgtxt>p{
+	margin-top: 20px;
+	color:#B92C28;
+	font-weight: 600;
+	font-size: 18px;
+}
+.msgtxt .jiage{
+	margin-top:20px;
+	background: url(../images/sj_1/txt_bg.png);
+	padding-left: 20px;
+	box-sizing: border-box;
+}
+.jiage p{
+	font-size:12px;
+	color: #999;
+}
+p span.old_sj{
+	text-decoration: line-through;
+	font-size: 14px;
+	color:#222222;
+}
+span.new_sj{
+	font-size:30px;
+	color:#CC0E11;
+}
+.cart {
+	padding: 40px;
+}
+.cart button {
+	border: 1px solid #666;
+	width: 100px;
+	height: 35px;
+	background: rgb(41, 40, 40);
+	margin: 0 20px;
+	border-radius: 4px;
+	color: #fff;
+}

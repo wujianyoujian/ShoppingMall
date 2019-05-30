@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>My SHOPING</title>
+	<link rel="shortcut icon" type="text/css" href="favicon.ico">
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css"/>
+	<link rel="stylesheet" type="text/css" href="./css/my.css"/>
+	<link rel="stylesheet" type="text/css" href="./css/gowuche.css"/>
+</head>
+<body>
+	<!--导航栏-->
+	<nav class="navbar navbar-inverse">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a href="index.html" class="navbar-brand">Shopping Mall</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav">
+					<li><a href="#">在线商城</a></li>
+					<li><a href="#">我的订单</a></li>
+					<li><a href="#">我的会员</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right" style="position:relative;">
+					<li><a href="login.html" target="_blank">登录 <span class="glyphicon glyphicon-user"></span></a></li>
+					<li>
+						<a href="gouwuche.html" id="SHOP">
+							<sapn class="glyphicon glyphicon-shopping-cart"></sapn> <span class="badge">0</span>
+						</a>
+						<!--购物车的布局-->
+						
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	
+	<!-- 用户信息 -->
+	<div class="container">
+		<div class="user">
+			<div class="avator">
+				<img src="./images/0.jpg" alt="">
+			</div>
+			<div class="user_info">
+				<div class="username"><span>用户名:</span> 向天高</div>
+				<div class="mail"><span>用户绑定的邮箱:</span>1536441482@qq.com</div>
+			</div>
+		</div>
+	</div>
+	
+	<!--商品栏-->
+	<div class="shop_list">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6">
+					<h3>购物车</h3>
+				</div>
+			</div>
+			<div class="list_title">
+				<ul class="clearfix">
+					<li><a href="#">全部商品　｜<span></span></a></li>
+					<li><a href="#">　降价商品<span class="label label-info">0</span>　｜</a></li>
+					<li><a href="#">　商品库存紧张<span class="label label-warning">0</span></a></li>
+				</ul>
+			</div>
+			<!--用表格来进行购物车商品的布局-->
+			<table>
+				<thead>
+					<th><input type="checkbox" id="allcheck" class="check"/> 全选</th>
+					<th>商品</th>
+					<th>详细信息</th>
+					<th>单价</th>
+					<th>数量</th>
+					<th>金额</th>
+					<th>管理</th>
+				</thead>
+				<tbody>
+					
+				</tbody>
+			</table>
+			<div class="total clearfix" id="total">
+				<a href="#">移入收藏夹</a>　<a href="#">分享</a>
+				<div class="total_jiage pull-right">
+					已选商品<i class="label label-info" id="select">0</i>件</span>
+					　合计(不含运费)<span id="t_jiage"> 0.0</span> 元
+					<button class="submit">结算</button>
+				</div><span>
+			</div>
+			
+			<!--当购物车里面的商品为空时显示-->
+			<!-- <div id="none">
+				<h3 style="padding-left:30px">主人当前还没有添加任何商品到购物车</h3>
+				<img src="./images/kong.jpg"/>
+				<p>你所喜欢的商品可能在热销中....</p>
+				<p>快去添加更多的商品吧</p>
+			</div> -->
+		</div>
+	</div>
+	
+	
+	
+	<!--bottom部分-->
+	<div class="jumbotron text-center bottom">
+		<p>欢迎下次继续使用我们的产品</p>
+		<p>
+			<a href="#">首页</a>
+			<a href="#">产品</a>
+			<a href="#">服务社区</a>
+			<a href="#">联系我们</a>
+		</p>
+		<p class="last">Copyright((c) Copyright 2018 15364. All Rights Reserved.)</p>
+	</div>
+	<script src="./js/jquery_1.12.4_jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="./js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="./js/my.js" type="text/javascript" charset="utf-8"></script>
+	<script src="./js/gowuche.js" type="text/javascript" charset="utf-8"></script>
+	<!-- <script src="./js/controal/user.js"></script> -->
+</body>
+</html>

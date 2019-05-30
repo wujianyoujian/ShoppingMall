@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Discuss</title>
+    <link rel="shortcut icon" type="text/css" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/my.css"/>
+    <link rel="stylesheet" type="text/css" href="css/discuss.css"/>
+    <script src="./js/jquery_1.12.4_jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="" type="text/javascript" charset="utf-8"></script>
+    <script src="js/discuss.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+    <!-- header部分 -->
+	<nav class="navbar navbar-inverse">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a href="index.html" class="navbar-brand">Shopping Mall</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav">
+					<li><a href="#">在线商城</a></li>
+					<li><a href="#">我的订单</a></li>
+					<li><a href="#">我的会员</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right" style="position:relative;">
+					<li><a href="login.html" target="_blank">登录 <span class="glyphicon glyphicon-user"></span></a></li>
+					<li>
+						<a href="gouwuche.html" target="_blank" id="SHOP">
+							<sapn class="glyphicon glyphicon-shopping-cart"></sapn> <span class="badge">0</span>
+						</a>
+						<!--直接显示的空购物车的布局
+						
+					</li>
+	                <!-- 一个城市位置 -->
+	                <li class="Lc">
+	                    <a href="javascript:;">
+	                        <span>上海</span>
+	                        <span>∨</span>
+	                    </a>
+	                    <!-- <div class="location mCustomScrollbar" data-mcs-theme="dark">
+	                            <div class="cityList">
+	                            </div>
+	                        </div>
+	                    </div> -->
+	                </li>
+					<div class="shop hidden-xs" id="shop">
+						
+							<i></i>
+							购物车中还没有商品，赶紧选购吧！
+						
+					</div>
+				</ul>
+			</div>
+		</div>
+	</nav>
+    
+
+    <!-- 标签部分 -->
+    <div class="container">
+        <ul class="breadcrumb">
+            <li><a href="javascript:;">Home</a></li>
+            <li><a href="javascript:;">用户</a></li>
+            <li class="active">留言区</li>
+        </ul>
+    </div>
+    <!-- 输入框部分 -->
+    <div class="contain">
+        <h5>如果你有什么建议，欢迎留下你的提议，我们将会认真考虑</h5>
+        <div class="commit">
+            <textarea class="comment">
+            </textarea>
+            <button class="Send">发布</button>
+        </div>
+        <div class="messageList">
+        </div>
+    </div>
+    <!-- 页脚部分 -->
+    <div class="page">
+</body>
+</html>

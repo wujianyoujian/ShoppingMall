@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/zhuce.css"/>
+    
+</head>
+<body>
+	<nav class="navbar navbar-inverse">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a href="index.html" class="navbar-brand">Shopping Mall</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav">
+					<li><a href="#">在线商城</a></li>
+					<li><a href="#">我的订单</a></li>
+					<li><a href="#">我的会员</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right" style="position:relative;">
+					<li><a href="login.html" target="_blank">登录 <span class="glyphicon glyphicon-user"></span></a></li>
+					<li>
+						<a href="gouwuche.html" target="_blank" id="SHOP">
+							<sapn class="glyphicon glyphicon-shopping-cart"></sapn> <span class="badge">0</span>
+						</a>
+						<!--直接显示的空购物车的布局-->
+						
+					</li>
+					<div class="shop hidden-xs" id="shop">
+						
+							<i></i>
+							购物车中还没有商品，赶紧选购吧！
+						
+					</div>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="zhuce_title">
+	    <p></p>
+        <samll></samll>
+	</div>
+    <div class="zhuce">
+    	<p><i class="hong">*</i> 标注为必填项</p>
+    	<form action="" method="post">
+    		<div class="reg">
+    		<ul>
+    			<li>用户名<i>*</i> <input type="text" id="input_text" class="input_def" />
+    			<span class="label label-warning">用户名由字母和数字组成</span>
+    			<span class="label label-danger">请输入用户名</span>
+    			</li>
+    			<li>
+                    密　码<i>*</i> 
+                    <input type="password" id="input_password" class="input_def"/>
+                    <span class="glyphicon glyphicon-eye-open"></span>
+                    <span class="label label-info">你的密码由字母,数字组成</span>
+                </li>
+                <li id="passwordcheck">
+                    密码复杂度
+                    <div class="lenght">
+                        <div class="dot"></div>
+                    </div>
+                </li>
+    			<li>
+                    确认密码<i>*</i> 
+                    <input type="password" id="reinput_password" class="input_def"/>
+                    <span class="label label-warning">请先输入你的密码</span>
+                    <span class="label label-success">密码一致</span>
+                </li>
+    			<li>
+    				设置问题<i>*</i>
+    				<select name="ques">
+    					<option value="0">--你的电话号码是多少--</option>
+    					<option value="1">--你最喜欢玩什么游戏--</option>
+    					<option value="2">--你的高中语文老师是谁--</option>
+    					<option value="3">--你的电话号码是多少--</option>
+    					<option value="4">--你的电话号码是多少--</option>
+    				</select>
+    			</li>
+    			<li>回答<i>*</i> <input type="text" class="input_def"/></li>
+    			<li>邮箱📪<i>*</i> <input type="email" class="input_def"/></li>
+    		</ul>
+    	</div>
+    	<div class="sex">
+    		<label for="nv">女</label><input type="radio" name="sex" id="nv"/>
+    				&nbsp;&nbsp;&nbsp;
+    		<label for="nan">男</label><input type="radio" name="sex" id="nan"/>
+    	</div>
+    	<div class="birth">
+    		生日<i class=hong>*</i>&nbsp;
+    		<select name="nian">
+    			<option value="0">--请选择--</option>
+    		</select>年&nbsp;
+    		<select name="yue">
+    			<option value="0">--请选择--</option>
+    		</select>月&nbsp;
+    		<select name="ri">
+    			<option value="0">--请选择--</option>
+    		</select>日&nbsp;
+    	</div>
+    	<div class="textarea">
+    		<span>个性名片:</span>
+    		<textarea name="" rows="" cols=""></textarea>	
+    		<i>还可以输入140个字</i>
+    	</div>
+    	<input type="button" name="" id="submit" value="确认注册" />
+    	<input type="reset" name="" id="res" value="重置" />
+    		
+    	</form>
+    	
+	</div>
+	<script src="js/jquery_1.12.4_jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="./js/zhuce.js" type="text/javascript" charset="utf-8"></script>
+	<script src="./js/controal/zhece.js"></script>
+</body>
+</html>
