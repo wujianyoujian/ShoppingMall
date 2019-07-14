@@ -49,6 +49,8 @@
                         <p>价格:　<span class="old_sj">￥${oldprice}</span></p>
                         <p >促销价:　<span class="new_sj">￥${newprice}</span></p>
                     </div>
+                    <p style="font-size: 12px">请选择商品的属性</p>
+                    <div class="select"></div>
                     <div class="cart">
                         <button class="add_cart">加入购物车</button>
                         <button class="buy_cart">立即购买</button>
@@ -93,6 +95,7 @@
             } 
         })
     }
+    //存储在服务器中信息
     let url = '/shop/good/detail'
     const urlParams = getUrlParams()
     url = url + '?id=' +urlParams.id
@@ -126,4 +129,60 @@
             })
         })
     })
+    // 模拟的详情页信息
+    function selectGood(typelist) {
+        let $select_item
+        typelist.forEach((item, index) => {
+            $select_item = jq(`
+                <div class="item_wrapper">
+                    <div class="item_text">${item.type}</div>
+                </div>`
+            )
+            jq('.select').append($select_item)
+        })
+        jq(".content .container").on('click','.item_wrapper', function() {
+            jq(this).css("color", "#ffaa16").siblings().css("color","#222")
+        })
+    }
+    function detailInfo(info_list) {
+        let $detail_info
+        info_list.forEach((item, index) => {
+            $detail_info = jq(`
+                <div class="info_item">
+                    <div class="info_text">${item.text}</div>
+                </div>
+            `)
+            jq('.detail_info').append($detail_info)
+        })
+    }
+    function detailImg(Imglist) {
+        let $detail_img
+        Imglist.forEach((item, index) => {
+            $detail_img = jq(`
+                <img src="${item.imgURL}">
+            `)
+            jq(".detail_img").append($detail_img)
+        })
+    }
+    if(urlParams.id === '10') {
+        setTimeout(()=>{
+            let url = 'http://localhost:8000/api/huawei7c.json'
+            get(url).then(res => {
+                if(res.errno === 0) {
+                    const Data = res.data
+                    selectGood(Data.selectType)
+                    detailInfo(Data['7CDetail'])
+                    detailImg(Data['7cImgURL'])
+                }
+            })
+        }, 400)
+        jq(".nav_title li").eq(0).find(".title_tag").eq(0).show()
+        jq(".nav_title li").on('click', function() {
+            let index = jq(this).index()
+            jq('.title_tag').eq(index).fadeIn(100)
+                .parent().siblings().find(".title_tag").fadeOut(100)
+            jq('.nav_connect li').eq(index).fadeIn(100)
+                .siblings().fadeOut(100)
+        })
+    }
 })()

@@ -97,6 +97,7 @@ window.onload=function(){
 				//是从用户当前屏幕的位置到达所相应的位置，不能弄错起点的位置
 				step=step>0?Math.ceil(step):Math.floor(step);
 				leader=leader+step;
+				leader = Math.ceil(leader)
 				window.scrollTo(0,leader);
 				if(leader==last_1){
 					clearInterval(time_2);

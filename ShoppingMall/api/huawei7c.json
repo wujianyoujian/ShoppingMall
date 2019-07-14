@@ -1,0 +1,108 @@
+{
+  "errno": 0,
+  "data": {
+    "selectType":[
+      {
+        "id": "0001",
+        "type": "5.45屏畅玩7【2+16】全网金色"
+      },{
+        "id": "0002",
+        "type": "5.45屏畅玩7【2+16】全网黑色"
+      },{
+        "id": "0003",
+        "type": "5.45屏畅玩7【2+16】全网蓝色"
+      },{
+        "id": "0004",
+        "type": "5.45屏畅玩8e青春【2+32】全网金色"
+      },{
+        "id": "0005",
+        "type": "5.45屏畅玩8e青春【2+32】全网黑色"
+      },{
+        "id": "0006",
+        "type": "5.45屏畅玩8e青春【2+32】全网蓝色"
+      },{
+        "id": "0007",
+        "type": "5.7屏畅玩7A【2+32】全网黑色"
+      },{
+        "id": "0008",
+        "type": "6.08屏畅玩8A【3+32】全网金色"
+      },{
+        "id": "0009",
+        "type": "6.08屏畅玩8A【3+32】全网黑色"
+    }],
+    "7CDetail": [
+    {
+      "id":"0001",
+      "text": "CC证书编号: 2018011606062392"
+    },{
+      "id":"0002",
+      "text": "品牌: honor/荣耀"
+    },{
+      "id":"0003",
+      "text": "售后服务: 全国联保"
+    },{
+      "id":"0004",
+      "text": "核心数: 四核"
+    },{
+      "id":"0005",
+      "text": "触摸屏类型: 多点触控触摸屏"
+    },{
+      "id":"0006",
+      "text": "运行内存RAM: 2GB"
+    },{
+      "id":"0007",
+      "text": "摄像头类型: CMOS"
+    },{
+      "id":"0008",
+      "text": "款式: 直板"
+    },{
+      "id":"0009",
+      "text": "CPU型号: 骁龙425"
+    }
+    ,{
+      "id":"0010",
+      "text": "产品名称: 畅享7"
+    },{
+      "id":"0011",
+      "text": "产品名称: honor/荣耀 畅玩7"
+    },{
+      "id": "0012",
+      "text": "型号: 畅玩7"
+    },{
+      "id": "0013",
+      "text": "电池类型: 不可拆卸电池"
+    },{
+      "id": "0014",
+      "text": "机身颜色: 5.45屏畅玩7 【2+16】全网..."
+    },{
+      "id": "0015",
+      "text": "键盘类型: 虚拟键盘"
+    }],
+    "7cImgURL": [
+      {
+      "id": "0001",
+      "imgURL": "https://img.alicdn.com/imgextra/i3/125975207/O1CN01NacTRv1oKqq3xbqLE_!!125975207.jpg"
+    },{
+      "id": "0002",
+      "imgURL": "https://img.alicdn.com/imgextra/i1/125975207/O1CN01p7STmy1oKqq3xbi1Q_!!125975207.jpg"
+    },{
+      "id": "0003",
+      "imgURL": "https://img.alicdn.com/imgextra/i1/125975207/O1CN01DKyveB1oKqq5oPuP1_!!125975207.jpg"
+    },{
+      "id": "0004",
+      "imgURL": "https://img.alicdn.com/imgextra/i3/125975207/O1CN01iLeQY11oKqq5oSizT_!!125975207.jpg"
+    },{
+     "id": "0005",
+     "imgURL": "https://img.alicdn.com/imgextra/i2/125975207/O1CN01jgQVjA1oKqq6uZ22h_!!125975207.jpg" 
+    },{
+      "id": "0006",
+      "imgURL": "https://img.alicdn.com/imgextra/i1/125975207/O1CN01B76Zh81oKqq4KFI5s_!!125975207.jpg"
+    },{
+      "id": "0007",
+      "imgURL": "https://img.alicdn.com/imgextra/i3/125975207/O1CN01KfsIF21oKqq5puQsi_!!125975207.jpg"
+    },{
+      "id":"0008",
+      "imgURL": "https://img.alicdn.com/imgextra/i2/125975207/O1CN01txeBrP1oKqq5oPIuX_!!125975207.jpg"
+    }]
+  }
+}
