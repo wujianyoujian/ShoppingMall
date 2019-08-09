@@ -63,11 +63,30 @@
         }
         const data = res.data||[]
         //循环生成
+        console.log(data.length)
+        let mobile_num = 0
+        var num_arr = []
         data.forEach((item,index) => {
-            if(item.type == 'mobile') {
-                let num = Math.floor((index+1)/4)
+            if(item.type === 'mobile') {
+                // let num = Math.floor((index+1)/4)
+                // console.log(num)
+                mobile_num++;
                 let $mobile_item = good_mobile(item.id, item.imgURL, item.title, item.content, item.newprice)
-                jq(".sj_list .row").eq(num).append($mobile_item)
+                if(index < 3) {
+                    jq(".sj_list .row").eq(0).append($mobile_item)
+                } else {
+                    let num = Math.floor((mobile_num - 4) / 4 + 1)
+                    if(jq('.sj_list .row').eq(num).length === 0) {
+                        let $row = jq(`
+                             <div class="row"></div>
+                         `)
+                        jq('.sj_list').append($row)
+                        jq('.sj_list .row').eq(num).append($mobile_item)
+                        
+                    } else {
+                        jq('.sj_list .row').eq(num).append($mobile_item)
+                    }
+                }
             } else if(item.type == 'computer') {
                 if(!item.title) {
                     let $computer_item = good_computer(item.id, item.imgURL, item.content, item.oldprice, item.newprice)
@@ -78,6 +97,13 @@
                 }
             }
         })
+        // console.log(num_arr)
+        // console.log(data)
+        // for(let i = 0 ; i < num_arr.length ; i++) {
+        //     let $row = jq(`<div class="row">
+        //         </div>`)
+        //     jq('.sj_list').append($row)
+        // }
     })
     // 主页的搜索功能,跳转到搜索页
     jq(".input-group-btn .btn").eq(0).on('click',()=> {

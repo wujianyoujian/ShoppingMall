@@ -54,7 +54,7 @@ router.post('/Addgood', (req, res, next) => {
   return result.then(Id => {
     if(Id) {
       res.json(
-        new SuccessModel(Id)
+        new SuccessModel({id:Id})
       )
     } else {
       res.json(
