@@ -1,0 +1,134 @@
+html,body {
+  width: 100%;
+  height: 100%;
+}
+.admin {
+  width: 100%;
+  height: 100%;
+}
+.admin .left {
+  width: 220px;
+  background: rgb(50, 64, 87);
+  padding: 20px 0;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+.LEFT {
+  width: 400px;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+.left .first_li {
+  overflow: hidden;
+  line-height: 50px;
+  cursor: pointer;
+}
+/* .left .first_li:hover {
+  background: rgba(255, 255, 255, 0.1);
+} */
+.first_li .first_title{
+  color: #ccc;
+  position: relative;
+  padding: 0 40px;
+}
+/* .first_li .first_title:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+} */
+.first_title a {
+  text-decoration: none;
+  color: #ccc;
+}
+.first_title .text {
+  margin-left: 20px;
+}
+.first_title .fa-angle-down {
+  position: absolute;
+  left: 45%;
+  top: 32%;
+  font-size: 22px;
+}
+.second_ul {
+  position: relative;
+  background: #1f2d3d;
+  display: none;
+}
+.second_ul .second_title {
+  color: #ccc;
+  padding: 0 50px;
+}
+.second_ul .second_title:hover {
+  background-color: rgba(255,255,255,0.1);
+}
+.second_title a {
+  display: block;
+  color: #ccc;
+  text-decoration: none;
+}
+/* .second_ul .second_title:hover {
+  background-color: rgba(255,255,255,0.1); 
+} */
+.admin .right {
+  position: absolute;
+  left: 220px;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.right .right_header {
+  height: 60px;
+  background: #eff2f7;
+  padding: 0 50px;
+  line-height: 60px;
+  background:#eff2f7;
+  position: relative;
+  margin-bottom: 20px;
+}
+.right_header .tag {
+  font-size: 12px;
+  color: #666;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 10px;
+}
+.right_header .username {
+  font-size: 12px;
+  color: #222;
+  vertical-align: top;
+}
+.right_header .avatar {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  vertical-align: top;
+  right: 50px;
+  top: 5px;
+}
+.avatar img{
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.right .mask {
+  position: absolute;
+  right: -25px;
+  top: 48px;
+  width: 100px;
+  height: 80px;
+  box-shadow: -2px 2px #ddd;
+  background:#fff;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 14px;
+  display: none;
+}
+.mask p {
+  cursor: pointer;
+}
+.mask p:hover {
+  background: #eee;
+}

@@ -1,0 +1,51 @@
+body {
+  background-color: #324057;
+}
+.container {
+  width: 320px;
+  height: 328px;
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  margin-left: -160px;
+  margin-top: -200px;
+  text-align: center;
+  opacity: 0
+}
+.container h1 {
+  margin: 40px 0;
+  font-size: 24px;
+  color: #fff;
+}
+.container .login {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+}
+.login .username, .login .password, .submit{
+  width: 280px;
+  margin-bottom: 20px
+}
+.submit {
+  height: 30px;
+  background: #20A0FF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.username input, .password input {
+  width: 100%;
+  height: 30px;
+  padding-left: 10px;
+  box-sizing: border-box;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+.container .info {
+  color: #f00;
+}
+.container .info p {
+  font-size: 12px;
+  margin-top: 5px;
+}

@@ -6,7 +6,7 @@ const logincheck = (username, password) => {
     password = genPassword(password)
     password = escape(password) 
     const sql = `
-        select username, realname from user where username=${username} and password=${password};
+        select username, realname, power from user where username=${username} and password=${password};
     `     
     // 这个查找到了就是返回有值的数组，没有就是undefine
     return exec(sql).then(rows => {
@@ -18,7 +18,7 @@ const register = (username, password) => {
     password = genPassword(password)
     password = escape(password)
     const sql =`
-        insert into user(username, password, realname) values(${username},${password},'default');
+        insert into user(username, password, realname, power) values(${username},${password},'default', 1);
     `
     return exec(sql).then(insertuser=> {
         if(insertuser.affectedRows > 0) {
@@ -36,8 +36,17 @@ const check = (username, password) => {
         return rows[0]
     })
 }
+const user_list = () => {
+    const sql = `
+        select username, realname, power from user;
+    `
+    return exec(sql).then(rows => {
+        return rows
+    })
+}
 module.exports = {
     logincheck,
     register,
-    check
+    check,
+    user_list
 }

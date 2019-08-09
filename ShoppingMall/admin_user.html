@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>ShopMall后台管理系统</title>
+  <link rel="stylesheet" href="./css/resert.css">
+  <link rel="stylesheet" href="./css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/admin/admin_base.css">
+  <link rel="stylesheet" href="./css/admin/admin_user.css">
+</head>
+
+<body>
+  <div class="admin">
+    <div class="left">
+      <ul class="LEFT">
+        <li class="first_li">
+          <div class="first_title">
+            <a href="./admin_index.html">
+              <span class="fa fa-th-large"></span>
+              <span class="text">首页</span>
+            </a>
+          </div>
+        </li>
+        <li class="first_li">
+          <div class="first_title">
+            <span class="fa fa-file-o"></span>
+            <span class="text">数据管理</span>
+            <span class="fa fa-angle-down"></span>
+          </div>
+          <ul class="second_ul">
+            <li class="second_title"><a href="./admin_user.html">用户列表</a></li>
+            <li class="second_title"><a href="./admin_shop.html">商品列表</a></li>
+            <li class="second_title"><a href="javascript:;">订单列表</a></li>
+            <li class="second_title"><a href="javascript:;">管理员列表</a></li>
+          </ul>
+        </li>
+        <li class="first_li">
+          <div class="first_title">
+            <span class="fa fa-pencil"></span>
+            <span class="text">添加数据</span>
+            <span class="fa fa-angle-down"></span>
+          </div>
+          <ul class="second_ul">
+            <li class="second_title">添加商品</li>
+          </ul>
+        </li>
+        <li class="first_li">
+          <div class="first_title">
+            <span class="fa fa-star"></span>
+            <span class="text">图表</span>
+            <span class="fa fa-angle-down"></span>
+          </div>
+        </li>
+        <li class="first_li">
+          <div class="first_title">
+            <span class="fa fa-pencil"></span>
+            <span class="text">编辑</span>
+            <span class="fa fa-angle-down"></span>
+          </div>
+        </li>
+        <li class="first_li">
+          <div class="first_title">
+            <span class="fa fa-cog"></span>
+            <span class="text">设置</span>
+            <span class="fa fa-angle-down"></span>
+          </div>
+          <ul class="second_ul">
+            <li class="second_title">管理员设置</li>
+          </ul>
+        </li>
+        <li class="first_li">
+          <div class="first_title">
+            <span class="fa fa-question-circle"></span>
+            <span class="text">说明</span>
+            <span class="fa fa-angle-down"></span>
+          </div>
+          <ul class="second_ul">
+            <li class="second_title">说明</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="right">
+      <div class="right_header">
+        <span class="tag"> 首页 / 数据管理 / </span>
+        <span class="username">用户列表</span>
+        <div class="avatar">
+          <img src="./images/20151008192345_uPC5U.jpeg" alt="头像">
+          <div class="mask">
+            <p>首页</p>
+            <p>退出</p>
+          </div>
+        </div>
+      </div>
+      <div class="user_table">
+        <div class="User">
+          <div class="user_title">
+            <span class="user_id">#</span>
+            <span class="user_data">权限</span>
+            <span class="user_name">用户账号</span>
+            <span class="user_address">默认名</span>
+          </div>
+          <ul class="user_list">
+            <!-- <li class="user">
+              <span class="user_id">1</span>
+              <span class="user_data">2019-07-29 16:31</span>
+              <span class="user_name">13256233254</span>
+              <span class="user_address">上海</span>
+            </li>
+            <li class="user">
+              <span class="user_id">2</span>
+              <span class="user_data">2019-07-29 16:28</span>
+              <span class="user_name">yeshenwu</span>
+              <span class="user_address">上海</span>
+            </li>
+            <li class="user">
+              <span class="user_id">3</span>
+              <span class="user_data">2019-07-29 16:20</span>
+              <span class="user_name">18825231326</span>
+              <span class="user_address">深圳</span>
+            </li> -->
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./js/jquery_1.12.4_jquery.min.js"></script>
+  <script src="./js/admin/admin_base.js"></script>
+  <script src="./js/admin/admin_ajax.js"></script>
+  <script src="./js/admin/admin_user.js"></script>
+</body>
+</html>

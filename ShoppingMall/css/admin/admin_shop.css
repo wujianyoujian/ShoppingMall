@@ -1,0 +1,161 @@
+.shop_table {
+  padding: 20px;
+}
+.Shop {
+  border: 1px solid #ccc;
+}
+.shop_title {
+  background: #dfe6ec;
+  line-height: 40px;
+  border-bottom: 1px solid #ccc;
+  padding-left: 55px;
+  box-sizing: border-box;
+}
+.shop_list .shop {
+  line-height: 40px;
+  border-bottom: 1px solid #ccc;
+}
+.shop:last-child {
+  border: none;
+}
+.Shop .shop .fa {
+  width: 50px;
+  display: inline-block;
+  text-align: center;
+  font-size: 22px;
+  color: #bbb;
+  cursor: pointer;
+}
+.Shop .shop_title .shop_id,
+ .Shop .shop_title .shop_name,
+ .Shop .shop_title .shop_id, 
+ .Shop .shop_title .shop_price,
+ .Shop .shop_title .shop_type, 
+ .Shop .shop_title .shop_play {
+  font-weight: bold !important;
+  color: #222 !important;
+  font-size: 16px !important;
+}
+.Shop .shop_id {
+  display: inline-block;
+  width: 50px;
+  text-align:center;
+  color: rgb(37, 35, 35);
+  font-size: 12px;
+}
+.Shop .shop_name {
+  display: inline-block;
+  width: 300px;
+  text-align: center;
+  color: rgb(37, 35, 35);
+  font-size: 12px;
+}
+.Shop .shop_price, .Shop .shop_type, .Shop .shop_play {
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+  color: rgb(37, 35, 35);
+  font-size: 12px;
+}
+.Shop .shop_list .shop button {
+  display: inline-block;
+  border: 1px solid #ccc;
+  background: #fff;
+  border-radius: 3px;
+  font-size: 12px;
+  cursor: pointer;
+}
+.Shop .shop_list .shop button.modify {
+  margin-left: 30px;
+}
+.Shop .shop_list .shop button.del {
+  background: #f75c5c;
+  border: 1px solid #ff6d6d;
+  color:#fff;
+}
+.Shop .shop_list .shop .info_deital {
+  width: 100%;
+  background: rgba(138, 138, 138, 0.1) !important;
+  display: none;
+  padding: 30px 40px;
+  box-sizing: border-box;
+  font-size: 14px;
+  overflow: hidden;
+  border-top: 1px solid #ccc;
+  box-shadow: 0 2px 2px #eee;
+  position: relative;
+}
+.info_deital .shop_info .info {
+  width: 50%;
+  float: left;
+}
+.info_name{
+  color: #99a9bf;
+  display: inline-block;
+  width: 70px;
+}
+.shop_info .shop_img {
+  position: absolute;
+  right: 40px;
+  top: 30px;
+  width: 100px;
+  height: 100px;
+}
+.shop_img img {
+  width: 100%;
+}
+.Modify {
+  width: 40%;
+  position: absolute;
+  left: 30%;
+  top: 15%;
+  overflow: hidden;
+  background: #fff;
+  padding: 10px 40px;
+  border: 1px solid #ccc;
+  z-index: 5;
+  display:none;
+}
+.Modify h3 {
+  margin:10px 0;
+  font-weight: bold;
+  margin-left: -10px;
+}
+.Modify .mod_info {
+  height: 40px;
+  line-height: 40px;
+}
+.mod_info span {
+  display: inline-block;
+  width: 120px;
+}
+.mod_info input {
+  border-radius: 3px;
+  border: 1px solid #000;
+  padding:0 15px;
+}
+.Modify button {
+  float: right;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.Modify button.submit {
+  background: #20a0ff;
+  color: #fff;
+}
+.Modify button.Esc {
+  margin-right: 20px;
+  background: #fff;
+}
+.Mask {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+  background: rgba(0,0,0,0.5);
+  display: none;
+}

@@ -39,8 +39,57 @@ const newcart = (goodData, username) => {
     })
 }
 
+const modify = (goodData) => {
+    const name = goodData.shop_name
+    const price = goodData.price
+    const imgURL = goodData.imgurl
+    const type = goodData.type
+    const content = goodData.content
+    let sql = `update good set `
+    if(name) {
+        sql += `title = '${name}',` 
+    }
+    if(content) {
+        sql += `content = '${content}',`
+    }
+    if(type) {
+        sql += `type = '${type}',`
+    }
+    if(price) {
+        sql += `newprice = ${price},`
+    }
+    if(imgURL) {
+        sql += `imgURL = '${imgURL}'`
+    }
+    sql += ` where id = ${goodData.ID};`
+    console.log(sql)
+    sql = sql.replace(', where', ' where')
+    console.log(sql)
+    return exec(sql).then(data => {
+        return data
+    })
+}
+
+const Addgood = (goodData) => {
+    const name = goodData.shop_name
+    const price = goodData.price
+    const imgURL = goodData.imgurl
+    const type = goodData.type
+    const content = goodData.content
+    const sql = `
+        insert into good(imgURL,oldprice,newprice,title,content,type) values
+            ('${imgURL}', 0,${price},'${name}','${content}','${type}');
+
+    `
+    return exec(sql).then(data => {
+        return data.insertId
+    })
+}
+
 module.exports = {
     getList,
     getDetail,
-    newcart
+    newcart,
+    modify,
+    Addgood
 }

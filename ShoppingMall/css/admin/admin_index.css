@@ -1,0 +1,27 @@
+.right .Info_title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+.Info_base {
+  width: 100%;
+  overflow: hidden;
+  padding: 40px 0;
+  display: none;
+}
+.Info_base .info_wrapper {
+  width: 33.3%;
+  float:left;
+}
+.info_wrapper .info_text {
+  padding: 20px;
+  margin:20px;
+  border-radius: 5px;
+  text-align: center;
+  background-color: #eee;
+}
+.info_text p span {
+  font-size: 20px;
+  font-weight: bold;
+}

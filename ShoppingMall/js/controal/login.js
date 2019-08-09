@@ -28,7 +28,7 @@
     
     // 获取页面中账号和密码的数据
     jq('#tijiao').on('click', ()=> {
-        let url = '/shop/user/login'
+        let url = '/shop/user/loginStage'
         let username = jq('#user_text input').eq(0).val()
         let password = jq('#user_password input').eq(0).val()
         let data = {

@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-const { getList, getDetail, newcart } = require('../controller/good');
+const { getList, getDetail, newcart, modify, Addgood} = require('../controller/good');
 const { SuccessModel, ErrorModel } = require('../model/resModel');
 const Checklogin = require('../middleware/Checklogin');
 
@@ -34,5 +34,33 @@ router.post('/newcart', Checklogin, (req, res, next) => {
     )
   })
 })
+router.post('/modify', (req, res, next) => {
+  const result = modify(req.body)
+  return result.then(data => {
+    if(data) {
+      res.json(
+        new SuccessModel()
+      )
+    } else {
+      res.json(
+        new ErrorModel()
+      )
+    }
+  })
+})
 
+router.post('/Addgood', (req, res, next) => {
+  const result = Addgood(req.body)
+  return result.then(Id => {
+    if(Id) {
+      res.json(
+        new SuccessModel(Id)
+      )
+    } else {
+      res.json(
+        new ErrorModel('添加失败')
+      )
+    }
+  })
+})
 module.exports = router;

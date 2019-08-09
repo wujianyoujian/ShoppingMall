@@ -11,6 +11,7 @@ const fs = require('fs')
 var goodRouter = require('./routes/good');
 var userRouter = require('./routes/user');
 var cartRouter = require('./routes/cart');
+var adminRouter = require('./routes/admin')
 
 var app = express();
 
@@ -51,6 +52,7 @@ app.use(session({
 app.use('/shop/good', goodRouter);
 app.use('/shop/user', userRouter);
 app.use('/shop/cart', cartRouter);
+app.use('/shop/admin', adminRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

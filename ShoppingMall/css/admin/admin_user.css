@@ -1,0 +1,44 @@
+.user_table {
+  padding: 20px;
+}
+.User {
+  border: 1px solid #ccc;
+}
+.User .user_title {
+  background:#dfe6ec;
+  line-height: 40px;
+  border-bottom: 1px solid #ccc;
+  font-weight: bold;
+}
+.User .user_list .user {
+  line-height: 40px;
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
+}
+.User .user_list .user:last-child {
+  border: none;
+}
+.User .user_id {
+  display: inline-block;
+  padding: 0 20px;
+  width: 50px;
+  text-align: center;
+}
+.User .user_data {
+  display: inline-block;
+  width: 180px;
+  padding: 0 20px;
+  text-align: center;
+}
+.User .user_name {
+  display: inline-block;
+  width: 180px;
+  padding: 0 20px;
+  text-align: center;
+}
+.User .user_address {
+  display: inline-block;
+  width: 100px;
+  padding: 0 20px;
+  text-align: center;
+}

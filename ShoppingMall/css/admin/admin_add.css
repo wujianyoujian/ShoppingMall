@@ -1,0 +1,128 @@
+.Add_shop .add_type .title, 
+.add_detail .title{
+  text-align: center;
+}
+.add_type .Type ,.Detail{
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin: 20px 200px;
+  min-width: 535px;
+  padding: 10px 0;
+}
+.Type .lable {
+  display: inline-block;
+  width: 150px;
+  line-height: 60px;
+  text-align: right;
+}
+.Type #Select {
+  width: 350px;
+  padding: 5px;
+  border-radius: 5px;
+  color: #8391a5;
+  line-height: 60px;
+  margin-left: 15px;
+  font-size: 16px;
+}
+.Type .type_down {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  background: rgb(247, 247, 247);
+  display: none;
+}
+.Type .type_down .input{
+  border-radius: 5px;
+  width: 350px;
+  padding: 5px;
+  margin-left: 15px;
+  font-size: 16px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+}
+.Type .type_down .type_submit {
+  display: block;
+  border-radius: 3px;
+  border: none;
+  color: #fff;
+  background: #4db3ff;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin:10px auto;
+}
+.Type .click_down {
+  text-align: center;
+  line-height: 40px;
+  color: #ccc;
+  cursor: pointer;
+}
+.click_down .fa{
+  margin-right: 10px;
+}
+.Detail {
+  line-height: 60px;
+}
+.input_name span,
+.input_progame span,
+.input_detail span,
+.input_price span {
+  display: inline-block;
+  width: 150px;
+  text-align: right;
+}
+.input_name input,
+.input_progame input,
+.input_detail input,
+.input_price input {
+  border-radius: 5px;
+  width: 350px;
+  padding: 5px;
+  margin-left: 15px;
+  font-size: 16px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+}
+.input_img {
+  margin: 20px 0;
+  position: relative;
+}
+.input_img span{
+  display: inline-block;
+  width: 150px;
+  text-align: right;
+}
+.input_img .fa {
+  margin-left: 15px;
+  width: 100px;
+  height: 100px;
+  border: 1px dotted #ccc;
+  font-size: 30px;
+  line-height: 100px;
+  text-align: center;
+  color: #ccc;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+.input_img .file {
+  display: none;
+}
+.input_img .showImg{
+  position: absolute;
+  left: 170px;
+  top: 0;
+  width: 100px;
+  height: 100px;
+  display: none;
+}
+.showImg img {
+  width: 100%;
+}
+.detail_submit{
+  display: block;
+  border-radius: 3px;
+  border: none;
+  color: #fff;
+  background: #4db3ff;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin: 10px auto;
+}
