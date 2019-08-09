@@ -278,6 +278,9 @@ li a.gowu{
 .list_text2{
 	color:#a4a4a4;
 	font-size:12px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
 }
 .computer_list .xiaomi .list_text2{
 	text-decoration: line-through;

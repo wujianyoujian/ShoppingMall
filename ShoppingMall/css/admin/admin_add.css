@@ -113,6 +113,13 @@
   height: 100px;
   display: none;
 }
+.input_img .text_img {
+  width: 200px;
+  padding: 5px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  margin-left: 20px;
+}
 .showImg img {
   width: 100%;
 }

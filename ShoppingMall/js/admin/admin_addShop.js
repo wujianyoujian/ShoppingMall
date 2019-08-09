@@ -36,7 +36,7 @@ $(document).ready(function() {
     let name = $('.input_name input').eq(0).val()
     let content = $('.input_detail input').eq(0).val()
     let price = $('.input_price input').eq(0).val()
-    let imgurl = ($(this).get(0).value)?($(this).get(0).value):'http://39.106.176.121/Shopimg/xiaomi_3.jpg'
+    let imgurl = ($(this).get(0).value)?($(this).get(0).value):$('.text_img').eq(0).val()
     let type = $('#Select').eq(0).val()
     let data = {
        shop_name: name,
@@ -52,7 +52,7 @@ $(document).ready(function() {
     }
     post(url, data).then((res) => {
       if(res.errno === 0) {
-        console.log(res)
+        location.href = location.href
       }
     })
   })
