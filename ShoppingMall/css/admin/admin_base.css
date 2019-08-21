@@ -71,6 +71,7 @@ html,body {
   background-color: rgba(255,255,255,0.1); 
 } */
 .admin .right {
+  min-width: 1100px;
   position: absolute;
   left: 220px;
   right: 0;

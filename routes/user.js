@@ -5,6 +5,12 @@ const { SuccessModel, ErrorModel } = require('../model/resModel');
 /* GET users listing. */
 router.get('/list', function(req, res, next) {
   const result = user_list()
+  if(!req.session.username) {
+    res.json(
+      new ErrorModel('没有登录')
+    )
+    return
+  }
   return result.then(data => {
     if(data) {
       res.json(

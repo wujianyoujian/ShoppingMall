@@ -2,6 +2,7 @@ var express = require('express')
 var router = express.Router()
 const {logincheck, register} = require('../controller/user')
 const {SuccessModel, ErrorModel} = require('../model/resModel')
+const Checklogin = require('../middleware/Checklogin')
 
 router.post('/loginAdmin', function(req, res, next) {
   const { username, password } = req.body

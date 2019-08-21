@@ -53,6 +53,9 @@ $(document).ready(function() {
     post(url, data).then((res) => {
       if(res.errno === 0) {
         location.href = location.href
+      } else {
+        alert('请先登录！！！')
+        location.href = './admin_login.html'
       }
     })
   })

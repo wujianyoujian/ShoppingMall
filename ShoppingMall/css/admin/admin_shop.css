@@ -52,7 +52,7 @@
 }
 .Shop .shop_price, .Shop .shop_type, .Shop .shop_play {
   display: inline-block;
-  width: 100px;
+  width: 200px;
   text-align: center;
   color: rgb(37, 35, 35);
   font-size: 12px;
@@ -66,7 +66,7 @@
   cursor: pointer;
 }
 .Shop .shop_list .shop button.modify {
-  margin-left: 30px;
+  margin-left: 60px;
 }
 .Shop .shop_list .shop button.del {
   background: #f75c5c;

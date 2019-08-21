@@ -61,7 +61,7 @@ $(document).ready(function() {
     })
   })
 
-  let url = '/shop/good/list'
+  let url = '/shop/good/list?isadmin=true'
   get(url).then(res => {
     if(res.errno === 0 && res.data) {
       let Data = res.data
@@ -71,6 +71,9 @@ $(document).ready(function() {
         let $shop_li = shop_li(index, item)
         $('.shop_list').append($shop_li)
       })
+    }
+    else {
+      location.href = './admin_login.html'
     }
   })
 

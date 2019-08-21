@@ -9,6 +9,15 @@ router.get('/list', function(req, res, next) {
   //搜索框用到的
   let keyword = req.query.keyword || ''
   keyword = decodeURI(keyword)
+  if(req.query.isadmin) {
+    // 表明是后台在访问这时候查找一下session
+    if(req.session.username == null) {
+      res.json(
+        new ErrorModel('没有登录')
+      )
+      return
+    }
+  }
   const result = getList(keyword)
   return result.then(listdata => {
     res.json(
@@ -34,7 +43,7 @@ router.post('/newcart', Checklogin, (req, res, next) => {
     )
   })
 })
-router.post('/modify', (req, res, next) => {
+router.post('/modify', Checklogin, (req, res, next) => {
   const result = modify(req.body)
   return result.then(data => {
     if(data) {
@@ -49,7 +58,7 @@ router.post('/modify', (req, res, next) => {
   })
 })
 
-router.post('/Addgood', (req, res, next) => {
+router.post('/Addgood', Checklogin, (req, res, next) => {
   const result = Addgood(req.body)
   return result.then(Id => {
     if(Id) {

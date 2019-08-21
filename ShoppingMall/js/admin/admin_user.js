@@ -12,6 +12,8 @@ $(document).ready(function() {
         let $user_li = user_li(index, item.power, item.username, item.realname)
         $('.user_list').append($user_li)
       })
+    } else {
+      location.href = './admin_login.html'
     }
   })
 
